@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bookThumbnail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        tools:src="@drawable/notebook" />
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/bookThumbnail"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/textColorBookName"
+        android:textSize="16sp"
+        tools:text="Book Name" />
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/book_name"
+        android:layout_toEndOf="@+id/bookThumbnail"
+        android:layout_toRightOf="@+id/bookThumbnail"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="2"
+        android:textColor="@color/textColorAuthorName"
+        android:textSize="12sp"
+        tools:text="Author Name" />
+
+</RelativeLayout>
